@@ -1,4 +1,5 @@
-function Story({story}){
+function Story({contents}){
+    const story = contents;
     return(
         <div>
                 <p>{story.character} was walking along one day in {story.setting}. {story.character} was

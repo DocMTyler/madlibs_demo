@@ -24,8 +24,8 @@ function App() {
     setState(newState);
   }
 
-  const story = isVisible ? <Card title="The Mad Lib Story">
-                              <Story story={state}/>
+  const storySomethingElse = isVisible ? <Card title="The Mad Lib Story">
+                              <Story contents={state}/>
                             </Card>
                             : "";
   
@@ -52,7 +52,7 @@ function App() {
                                                 setValue={(value) => stateSetter("result", value)}/>
       </Card>
       <Button label="Show the story!" action={()=> {setVisible(!isVisible)}}/>
-      {story}
+      {storySomethingElse}
     </div>
   );
 }
